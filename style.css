@@ -36,10 +36,6 @@
   font-size: 80px;
 }
 
-.hidden {
-  opacity: 0;
-}
-
 .modal-overlay {
   position: fixed;
   top: 0;
