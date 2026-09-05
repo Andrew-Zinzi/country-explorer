@@ -22,50 +22,50 @@
           <input
             type="search"
             id="country-search-bar"
+            required
             placeholder="Travel the world!"
           />
           <button type="submit" id="country-search-submit">Go!</button>
         </form>
       </search>
 
-      <div id="result-grid">
-        <article class="country-result">
-          <h1 class="country-result-name">Country Name</h1>
-          <span class="fi fi-un"></span>
-          <button>Check it out!</button>
-        </article>
-
-        <article class="country-result">
-          <h1 class="country-result-name">Country Name</h1>
-          <span class="fi fi-un"></span>
-          <button>Check it out!</button>
-        </article>
-
-        <article class="country-result">
-          <h1 class="country-result-name">Country Name</h1>
-          <span class="fi fi-un"></span>
-          <button>Check it out!</button>
-        </article>
-
-        <article class="country-result">
-          <h1 class="country-result-name">Country Name</h1>
-          <span class="fi fi-un"></span>
-          <button>Check it out!</button>
-        </article>
-
-        <article class="country-result">
-          <h1 class="country-result-name">Country Name</h1>
-          <span class="fi fi-un"></span>
-          <button>Check it out!</button>
-        </article>
-
-        <article class="country-result">
-          <h1 class="country-result-name">Country Name</h1>
-          <span class="fi fi-un"></span>
-          <button>Check it out!</button>
-        </article>
-      </div>
+      <div id="result-grid"></div>
     </main>
+
+    <div class="modal-overlay">
+      <div class="result-modal-box">
+        <header>
+          <h2 class="result-modal-box-name">Country Name</h2>
+        </header>
+        <article>
+          <span class="result-modal-box-flag fi fi-un"></span>
+          <ul>
+            <li class="result-modal-box-capital">capital</li>
+            <li class="result-modal-box-population">Population</li>
+            <li class="result-modal-box-currency">currency</li>
+            <li class="result-modal-box-language">Language</li>
+          </ul>
+        </article>
+        <footer>
+          <button class="modal-close" type="button">
+            <svg
+              xmlns="http://w3.org"
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="1" y1="11" x2="11" y2="1"></line>
+              <line x1="1" y1="1" x2="11" y2="11"></line>
+            </svg>
+          </button>
+        </footer>
+      </div>
+    </div>
 
     <script src="app.js"></script>
   </body>
